@@ -6,11 +6,28 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.avis_client {
+    font-size: 1.3em;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nom_client {
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.descriptif {
+    font-size: 1.7em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#formulaire_contact {
+    margin:15px;
+    padding-left:35%;
+}
 
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    outline: none !important;
 }
 
 a:hover {
@@ -92,7 +109,9 @@ a:hover {
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
-    background-size: 280px 280px;
+    opacity:1;
+    background-size: 280px 280px; 
+
 }
 
 .b-parallax {
@@ -100,7 +119,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: black;
 }
 
 .d-bloc button:hover {
@@ -133,7 +152,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -201,6 +220,7 @@ a:hover {
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
     color: rgba(0, 0, 0, .7);
+
 }
 
 .l-bloc .icon-round,
@@ -231,7 +251,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, .9);
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -260,7 +280,7 @@ a:hover {
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
 .l-bloc .btn-wire:hover {
-    color: rgba(0, 0, 0, .7);
+    color: rgba(0, 0, 0, 1);
     border-color: rgba(0, 0, 0, .3);
 }
 
@@ -651,7 +671,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black!important;
 }
 
 .container {
@@ -736,7 +756,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    font-size:1.2em;
+    color: black!important;
 }
 
 .portfolio-thumb {
@@ -775,12 +796,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
-}
+    color: white!important;
+    }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -818,11 +839,12 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.png");
+    opacity:0.8;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.png");
 }
 
 @media (max-width: 1024px) {
@@ -861,6 +883,10 @@ h4 {
 }
 
 @media (max-width: 991px) {
+    #formulaire_contact {
+        padding-left: 15px;
+    }
+    
     .container {
         width: 100%;
     }
